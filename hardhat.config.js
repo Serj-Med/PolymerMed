@@ -3,6 +3,11 @@ require("@nomicfoundation/hardhat-foundry");
 
 require('dotenv').config();
 
+mumbai: {
+   url: process.env.ALCHEMY_RPC,
+   accounts: [process.env.PRIVATE_KEY],
+},
+     
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: {
